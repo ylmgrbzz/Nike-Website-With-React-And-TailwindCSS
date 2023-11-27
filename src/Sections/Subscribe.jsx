@@ -1,3 +1,5 @@
-export const Subscribe = () => {
+const Subscribe = () => {
   return <div>Subscribe</div>;
 };
+
+export default Subscribe;

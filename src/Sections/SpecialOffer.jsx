@@ -1,3 +1,5 @@
-export const SpecialOffer = () => {
+const SpecialOffer = () => {
   return <div>SpecialOffer</div>;
 };
+
+export default SpecialOffer;

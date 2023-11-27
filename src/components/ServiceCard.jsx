@@ -1,3 +1,5 @@
-export const ServiceCard = () => {
+const ServiceCard = () => {
   return <div>ServiceCard</div>;
 };
+
+export default ServiceCard;
