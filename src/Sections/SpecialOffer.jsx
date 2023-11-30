@@ -4,14 +4,21 @@ import { Button } from "../components";
 
 const SpecialOffer = () => {
   return (
-    <section>
-      <div className="  ">
-        <div>
-          <img />
-        </div>
-        <div>
-          <h2 className="text-4xl font-palanquin font-bold">
-            <span className="text-coral-red">Special </span>
+    <section
+      className="flex  justify-between items-center 
+    max-xl:flex-col-reverse gap-10 max-container  "
+    >
+      <div className="flex-1  ">
+        <img
+          src={offer}
+          alt="Shoe Promotion"
+          width={773}
+          height={687}
+          className="object-contain w-full"
+        />
+        <div className="flex  flex-1 flex-col">
+          <h2 className="text-4xl mt-2 font-palanquin font-bold">
+            <span className="  text-coral-red">Special </span>
             Offer
           </h2>
           <p className="mt-4 info-text">
@@ -25,9 +32,14 @@ const SpecialOffer = () => {
             is nothing short of exceptional.
           </p>
         </div>
-        <div>
-          <Button />
-          <Button />
+        <div className="mt-11 flex flex-wrap gap-4">
+          <Button label="Shop now" iconURL={arrowRight} />
+          <Button
+            label="Learn more"
+            backgroundColor="bg-white"
+            borderColor="border-slate-gray"
+            textColor="text-slate-gray"
+          />
         </div>
       </div>
     </section>
